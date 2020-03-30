@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "passport-title-generator-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple website showing off Passport Title Generator",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "John Ibsen <j.ibsen@projectfuse.net>",
   "dependencies": {
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
@@ -13,12 +13,14 @@
     "gatsby-plugin-sharp": "^2.4.13",
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-sharp": "^2.3.19",
+    "passport-title-generator": "^0.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -27,6 +29,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
@@ -36,9 +39,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/magichair/passport-title-generator-website"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/magichair/passport-title-generator-website/issues"
   }
 }
