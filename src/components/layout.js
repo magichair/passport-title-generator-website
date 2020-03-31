@@ -34,6 +34,11 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <footer>
+          Only a working list of titles. See and submit updates at
+          {` `}
+          <a href="https://github.com/magichair/passport-title-generator">magichair/passport-title-generator</a>
+        </footer>
       </div>
     </>
   )

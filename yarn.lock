@@ -5292,6 +5292,14 @@ gatsby-page-utils@^0.0.45:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-google-analytics@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.2.2.tgz#b4d2a10e1863bb4c92084a1778c4a2aab53292f5"
+  integrity sha512-at0eUPTyetGuPW1ceISAv58a9fwbwsLX9V5ucwKYShs98Spil/FWviukW0f1A2LUsWOGTiVJYReS7IVVw+FlIA==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    minimatch "3.0.4"
+
 gatsby-plugin-manifest@^2.2.48:
   version "2.2.48"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.48.tgz#a082addd697a9d7c27ce51f1c08690b8215c8283"
@@ -8825,10 +8833,10 @@ pascalcase@^0.1.1:
   resolved "https://registry.yarnpkg.com/pascalcase/-/pascalcase-0.1.1.tgz#b363e55e8006ca6fe21784d2db22bd15d7917f14"
   integrity sha1-s2PlXoAGym/iF4TS2yK9FdeRfxQ=
 
-passport-title-generator@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/passport-title-generator/-/passport-title-generator-0.0.2.tgz#00f0e427c39c0d03e9ca62358bf1d7249e2fd9cf"
-  integrity sha512-Btyg1uraoYI56MCDWzrcRwPq3NscDpmDfvLPBuNVBbbP4uG5uhKiZts6vpMUj+2hSEtv16Ry567OSMkPy/CEWQ==
+passport-title-generator@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/passport-title-generator/-/passport-title-generator-0.0.3.tgz#abbb395ac9e753e071303152c75aa67ec1369648"
+  integrity sha512-87sLnCq72sHWl6ob+iRhdgcnofd1sRcZmeufMKXUc80FRaiCQ76vJxD/59a2SXZNo79tOZu1Jt/C+t4zDztP/w==
 
 password-prompt@^1.0.4:
   version "1.1.2"
