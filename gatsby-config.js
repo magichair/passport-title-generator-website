@@ -7,22 +7,14 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
-        // The property ID; the tracking code won't be generated without it
+        // your google analytics tracking id
         trackingId: `UA-65966102-2`,
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        // Puts tracking script in the head instead of the body
         head: false,
-        // Setting this parameter is optional
+        // enable ip anonymization
         anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: `magichair.github.io`,
       },
     },
     `gatsby-plugin-react-helmet`,
