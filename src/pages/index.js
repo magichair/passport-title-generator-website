@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import PassportTitleGenerator from 'passport-title-generator'
+import Select from "react-dropdown-select"
 PassportTitleGenerator.seed(new Date().getMilliseconds())
 const originalData = PassportTitleGenerator.originalData;
 
@@ -14,6 +15,8 @@ class IndexPage extends React.Component {
     this.lockAdj = this.lockAdj.bind(this);
     this.lockNoun = this.lockNoun.bind(this);
     this.unlock = this.unlock.bind(this);
+    this.setAdj = this.setAdj.bind(this);
+    this.setNoun = this.setNoun.bind(this);
     this.state = {
       currentTitle: PassportTitleGenerator.next(),
       adjLocked: false,
@@ -24,6 +27,18 @@ class IndexPage extends React.Component {
   regenerateTitle() {
     this.setState({
       currentTitle: PassportTitleGenerator.next()
+    })
+  }
+
+  setAdj(values) {
+    this.setState({
+      currentTitle: [values[0].name, this.state.currentTitle[1]]
+    })
+  }
+
+  setNoun(values) {
+    this.setState({
+      currentTitle: [this.state.currentTitle[0], values[0].name]
     })
   }
 
@@ -49,7 +64,28 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Home" />
-        <h1 color={this.state.adjLocked ? "grey" : "black"}>{this.state.currentTitle[0]}</h1> <h1 color={this.state.nounLocked ? "grey" : "black"}>{this.state.currentTitle[1]}</h1>
+        <Select
+          searchable
+          dropdownHandle
+          options={originalData.adjs.map(v => {return {"name":v}})}
+          values={[{"name":this.state.currentTitle[0]}]}
+          valueField="name"
+          searchBy="name"
+          labelField="name"
+          disabled={this.state.adjLocked}
+          onChange={(values) => this.setAdj(values)}
+        />
+        <Select
+          searchable
+          dropdownHandle
+          options={originalData.nouns.map(v => {return {"name":v}})}
+          values={[{"name":this.state.currentTitle[1]}]}
+          valueField="name"
+          searchBy="name"
+          labelField="name"
+          disabled={this.state.nounLocked}
+          onChange={(values) => this.setNoun(values)}
+        />
         <button onClick={this.regenerateTitle}>Regenerate</button>
         <button onClick={this.lockAdj}>Lock Adj</button>
         <button onClick={this.lockNoun}>Lock Noun</button>
