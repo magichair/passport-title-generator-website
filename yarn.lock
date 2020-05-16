@@ -8830,10 +8830,10 @@ pascalcase@^0.1.1:
   resolved "https://registry.yarnpkg.com/pascalcase/-/pascalcase-0.1.1.tgz#b363e55e8006ca6fe21784d2db22bd15d7917f14"
   integrity sha1-s2PlXoAGym/iF4TS2yK9FdeRfxQ=
 
-passport-title-generator@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/passport-title-generator/-/passport-title-generator-0.1.2.tgz#fdfd98c925cf2fe6b4d57667d5371955c2710bb7"
-  integrity sha512-QS+pIBgyqvbEv280ET/yJKQf95OwE35qhSjt40Kncsf3TXGtJPA3eXexYVfdzIODDeR3h6169veZELhI4Ch9gg==
+passport-title-generator@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/passport-title-generator/-/passport-title-generator-0.1.3.tgz#dfa944a943c450c0e128eb60ca20e545348bb232"
+  integrity sha512-Y02zeqwt3X9EXcxht1olUpjDgW/xxl2X0SA24bYbxrIzisvNvKqktgi6c4OCkomCizdXKxfaQ9IclHVTTpvdqw==
 
 password-prompt@^1.0.4:
   version "1.1.2"
